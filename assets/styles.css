@@ -103,3 +103,14 @@ button {
         top: 16px;
     }
 }
+/* Añade al final de tu archivo CSS */
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}

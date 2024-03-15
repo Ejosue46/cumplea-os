@@ -3,27 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Cumpleaños</title>
+    <title>Fuegos Artificiales</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <!-- Contenido de la página principal aquí -->
     <div class="container">
-        <h1>¡Feliz Cumpleaños!</h1>
+        <h1>¡Fuegos Artificiales!</h1>
         <p>¡Celebra con nosotros!</p>
         <button onclick="location.href='carta.html'">Abrir carta</button>
+        <div id="fireworks-container"></div>
     </div>
+    <script src="assets/fireworks.js"></script>
 </body>
 </html>
-<script>
-    document.querySelector('button').addEventListener('click', function() {
-        var mensaje = document.querySelector('textarea').value;
-        if (mensaje.trim() !== '') {
-            if (confirm('¿Estás seguro de enviar esta carta?')) {
-                alert('La carta ha sido enviada correctamente.');
-            }
-        } else {
-            alert('Por favor, escribe un mensaje antes de enviar la carta.');
-        }
-    });
-</script>
