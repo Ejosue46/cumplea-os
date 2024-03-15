@@ -1,11 +1,9 @@
-/* Estilos comunes para la aplicación */
 body {
     margin: 0;
     padding: 0;
     background-image: url('1.jpg'); /* Ajusta el nombre de tu imagen de fondo */
     background-size: cover;
     font-family: Arial, sans-serif;
-    overflow: hidden; /* Evita el desplazamiento vertical */
 }
 
 .container {
@@ -32,8 +30,8 @@ button {
         margin-top: 10%; /* Ajusta para dispositivos móviles */
     }
 }
-
 /* Añade al final de tu archivo CSS */
+
 @keyframes appear {
     0% {
         opacity: 0;
@@ -105,34 +103,62 @@ button {
         top: 16px;
     }
 }
+/* Añade al final de tu archivo CSS */
 
-/* Estilos para los fuegos artificiales */
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+/* Añade al final de tu archivo CSS */
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
 #fuegos-artificiales {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
-}
-
-.fuego-artificial {
+    overflow: hidden;
+  }
+  
+  .fuego-artificial {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 10px;
     height: 10px;
-    background-color: white;
     border-radius: 50%;
-    pointer-events: none;
-    animation: fuegoArtificial 2s linear infinite;
-}
-
-@keyframes fuegoArtificial {
+    background-color: red;
+    animation: fuego-artificial 2s linear infinite;
+  }
+  
+  @keyframes fuego-artificial {
     0% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
+      top: 0;
+      opacity: 1;
     }
+  
+    50% {
+      top: 50%;
+      opacity: 0.5;
+    }
+  
     100% {
-        transform: translateY(-100vh) scale(2);
-        opacity: 0;
+      top: 100%;
+      opacity: 0;
     }
-}
+  }
+  
