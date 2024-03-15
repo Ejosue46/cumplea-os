@@ -125,3 +125,40 @@ button {
     opacity: 0;
     pointer-events: none;
 }
+#fuegos-artificiales {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .fuego-artificial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    animation: fuego-artificial 2s linear infinite;
+  }
+  
+  @keyframes fuego-artificial {
+    0% {
+      top: 0;
+      opacity: 1;
+    }
+  
+    50% {
+      top: 50%;
+      opacity: 0.5;
+    }
+  
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+  

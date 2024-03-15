@@ -29,3 +29,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     launchFireworks();
 });
+const fuegosArtificiales = document.getElementById("fuegos-artificiales");
+
+function crearFuegoArtificial() {
+  const fuegoArtificial = document.createElement("div");
+  fuegoArtificial.classList.add("fuego-artificial");
+
+  // Posición aleatoria
+  const x = Math.random() * 100;
+  const y = Math.random() * 100;
+  fuegoArtificial.style.left = `${x}%`;
+  fuegoArtificial.style.top = `${y}%`;
+
+  // Color aleatorio
+  const color = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+  fuegoArtificial.style.backgroundColor = color;
+
+  fuegosArtificiales.appendChild(fuegoArtificial);
+
+  setTimeout(() => {
+    fuegoArtificial.remove();
+  }, 2000);
+}
+
+setInterval(crearFuegoArtificial, 100);
