@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('1'); /* Ajusta el nombre de tu imagen de fondo */
+    background-image: url('1.jpg'); /* Ajusta el nombre de tu imagen de fondo */
     background-size: cover;
     font-family: Arial, sans-serif;
 }
