@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     launchFireworks();
 
 
-document.getElementById("openCartaBtn").addEventListener("click", function() {
+    document.getElementById("openCartaBtn").addEventListener("click", function() {
         window.location.href = "carta.html";
     });
     
