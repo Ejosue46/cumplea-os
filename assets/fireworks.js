@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const container = document.getElementById('fireworks-container');
+    const container = document.getElementById('contenedor-de-fuegos-artificiales'); // Corregido
 
     function createFirework() {
         const firework = document.createElement('div');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("openCartaBtn").addEventListener("click", function() {
         window.location.href = "carta.html";
     });
-    
+
 
 });
 const fuegosArtificiales = document.getElementById("fuegos-artificiales");
