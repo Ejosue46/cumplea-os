@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     launchFireworks();
+
+
+document.getElementById("openCartaBtn").addEventListener("click", function() {
+        window.location.href = "carta.html";
+    });
+    
+
 });
 const fuegosArtificiales = document.getElementById("fuegos-artificiales");
 
