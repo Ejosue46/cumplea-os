@@ -5,6 +5,7 @@ body {
     background-image: url('1.jpg'); /* Ajusta el nombre de tu imagen de fondo */
     background-size: cover;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita el desplazamiento vertical */
 }
 
 .container {
@@ -102,5 +103,36 @@ button {
         width: 6px;
         height: 6px;
         top: 16px;
+    }
+}
+
+/* Estilos para los fuegos artificiales */
+#fuegos-artificiales {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fuego-artificial {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fuegoArtificial 2s linear infinite;
+}
+
+@keyframes fuegoArtificial {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(2);
+        opacity: 0;
     }
 }
