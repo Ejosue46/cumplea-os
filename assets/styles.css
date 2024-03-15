@@ -1,18 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg');
+    background-image: url('background.jpg'); /* Ajusta el nombre de tu imagen de fondo */
     background-size: cover;
     font-family: Arial, sans-serif;
 }
 
 .container {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 20%; /* Ajusta según tu preferencia */
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Cambia el color del botón según tus preferencias */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -25,13 +25,8 @@ button {
     border-radius: 8px;
 }
 
-textarea {
-    width: 80%;
-    margin-bottom: 20px;
-}
-
 @media only screen and (max-width: 600px) {
     .container {
-        margin-top: 10%;
+        margin-top: 10%; /* Ajusta para dispositivos móviles */
     }
 }
